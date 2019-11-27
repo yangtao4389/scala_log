@@ -75,4 +75,13 @@ https://github.com/spmygithub/ImoocLog_SparkStreaming
 
 ### 打包教程：
 https://weilu2.github.io/2018/11/16/%E9%85%8D%E7%BD%AE-Intellij-Idea-%E5%92%8C-Sbt-%E5%BC%80%E5%8F%91%E3%80%81%E6%89%93%E5%8C%85%E3%80%81%E8%BF%90%E8%A1%8C-Spark-%E7%A8%8B%E5%BA%8F/
+https://blog.csdn.net/freecrystal_alex/article/details/78296851
+#### 直接生成java -jar 执行的jar包
+1.IntelliJ 中 File--->project structure --> Artifacts打开
+2.如果存在，把原先的删除掉
+3.删除本地的out输出目录跟META-INF文件夹
+4.点击+ ---> JAR --> from module to jar ---> 选择CountByStreaming类，会自动生成打包相关信息
+5.apply，关闭
+6.Build --->Build Artifact --->Build  会在配置好的生成路径生成jar包。该包可以直接通过java -jar **.jar 来运行
+
 
